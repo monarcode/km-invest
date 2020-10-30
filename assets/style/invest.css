@@ -298,8 +298,6 @@ body {
 }
 
 #mpos .left {
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

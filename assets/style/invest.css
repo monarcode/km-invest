@@ -30,6 +30,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2rem;
 }
 
@@ -256,21 +259,21 @@ body {
   color: #383838;
 }
 
+#mpos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #mpos .outer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#mpos .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,9 +316,20 @@ body {
 #mpos .left ul {
   list-style-image: url("../img/cir.svg");
   list-style-position: inside;
+  justify-self: flex-start;
 }
 
 #mpos .left ul li {
+  margin: 1rem 0;
+}
+
+#mpos ul {
+  list-style-image: url("../img/cir.svg");
+  list-style-position: inside;
+  justify-self: flex-start;
+}
+
+#mpos ul li {
   margin: 1rem 0;
 }
 
@@ -323,13 +337,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #agrivest {
@@ -450,6 +457,12 @@ body {
   }
   #mpos .left {
     text-align: center;
+  }
+  #agrivest .outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=invest.css.map */

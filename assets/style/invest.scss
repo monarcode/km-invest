@@ -35,6 +35,7 @@ body {
 .ctas {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 2rem;
 }
 
@@ -213,15 +214,15 @@ body {
     align-items: center;
     color: $dark;
 
-    .outer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .container {
         // align-self: stretch;
         display: flex;
+        align-items: center;
+    }
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -253,6 +254,7 @@ body {
         ul {
             list-style-image: url('../img/cir.svg');
             list-style-position: inside;
+            justify-self: flex-start;
 
             li {
                 margin: 1rem 0;
@@ -260,10 +262,20 @@ body {
         }
     }
 
+    ul {
+        list-style-image: url('../img/cir.svg');
+        list-style-position: inside;
+        justify-self: flex-start;
+
+        li {
+            margin: 1rem 0;
+        }
+    }
+
     .right {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        // flex-direction: column;
+        // align-items: center;
     }
 }
 
@@ -367,6 +379,12 @@ body {
 
         .left {
             text-align: center;
+        }
+    }
+
+    #agrivest {
+        .outer {
+            flex-direction: column-reverse;
         }
     }
 }

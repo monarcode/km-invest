@@ -422,6 +422,19 @@ body {
   font-weight: bolder;
 }
 
+#card {
+  animation: card 2s ease-in-out infinite alternate-reverse;
+}
+
+#coin {
+  -webkit-animation: card 2.5s ease-in-out infinite alternate;
+          animation: card 2.5s ease-in-out infinite alternate;
+}
+
+#mpos-illus {
+  animation: card 3s ease-in-out infinite alternate-reverse;
+}
+
 @media screen and (max-width: 500px) {
   html {
     font-size: 50%;
@@ -463,6 +476,36 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+@-webkit-keyframes card {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes card {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=invest.css.map */

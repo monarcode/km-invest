@@ -335,8 +335,15 @@ body {
     }
 }
 
-
-
+#card {
+    animation: card 2s ease-in-out infinite alternate-reverse;
+}
+#coin {
+    animation: card 2.5s ease-in-out infinite alternate;
+}
+#mpos-illus {
+    animation: card 3s ease-in-out infinite alternate-reverse;
+}
 
 
 
@@ -386,5 +393,17 @@ body {
         .outer {
             flex-direction: column-reverse;
         }
+    }
+}
+
+@keyframes card {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
